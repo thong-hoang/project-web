@@ -49,8 +49,8 @@ div {
 
 .header-main {
     height: 70px;
-    z-index: 10;
-    position: relative;
+    /* z-index: 10;
+    position: relative; */
 }
 
 .header .flex-row {
@@ -271,6 +271,10 @@ ul.menu>li:before, .widget>ul>li:before {
 
 .row.row-small {
     max-width: 1302.5px;
+}
+
+.row.row-large {
+    max-width: 1340px
 }
 
 .row, .gallery {
@@ -755,6 +759,10 @@ h4 {
     min-height: 40px;
     z-index: 9;
     position: relative;
+}
+
+.header-top {
+    min-height: 30px
 }
 
 .header-top, .header-bottom {
@@ -3325,7 +3333,7 @@ option {
     font-size: 15px;
     font-weight: 700;
     color: #fff;
-    padding: 0 15px;
+    padding: 0 175px;
     min-width: 170px;
     border-radius: 3px;
     border: none;
@@ -3359,4 +3367,39 @@ option {
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.transparent .header-main {
+    height: 30px
+}
+
+.transparent #logo img {
+    max-height: 30px
+}
+
+.has-transparent+.page-title:first-of-type, .has-transparent+#main>.page-title, .has-transparent+#main>div>.page-title, .has-transparent+#main .page-header-wrapper:first-of-type .page-title {
+    padding-top: 80px;
+}
+
+.header.show-on-scroll, .stuck .header-main {
+    height: 45px !important
+}
+
+.stuck #logo img {
+    max-height: 45px !important
+}
+
+.search-form {
+    width: 61%;
+}
+
+.minicart-wrapper .counter.qty {
+    background: #ff5501;
+    color: #ffffff;
+    display: inline-block;
+    margin: 3px 0 0;
+    min-width: 18px;
+    overflow: hidden;
+    text-align: center;
+    white-space: normal;
 }
